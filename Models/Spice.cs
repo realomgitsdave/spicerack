@@ -1,11 +1,9 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace spicerack.Models
 {
     public class Spice
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public string? Manufacturer { get; set; }
         public decimal? Price { get; set; }
         public decimal? OuncesTotal { get; set; }
@@ -13,6 +11,6 @@ namespace spicerack.Models
         public int? Rating { get; set; }
         public List<string>? Tags { get; set; }
 
-        public virtual ICollection<Rub> Rubs { get; set; }
+        public virtual ICollection<Rub>? Rubs { get; set; }
     }
 }
